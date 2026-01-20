@@ -9,6 +9,8 @@
 * [Core](api/core/README.md)
   * [Plugin System](api/core/plugin-system.md)
   * [Event System](api/core/event-system.md)
+  * [Player Events](api/core/player-events.md)
+  * [Messaging](api/core/messaging.md)
   * [ECS (Component System)](api/core/ecs.md)
   * [Logging](api/core/logging.md)
 * [Commands](api/commands/README.md)
