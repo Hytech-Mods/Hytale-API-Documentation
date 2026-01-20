@@ -6,14 +6,14 @@ Handling player connection and interaction events.
 
 ### Available Events
 
-| Event | Description |
-|-------|-------------|
-| `PlayerConnectEvent` | Player connects to server |
-| `PlayerDisconnectEvent` | Player disconnects |
-| `PlayerReadyEvent` | Player is ready |
-| `PlayerChatEvent` | Player sends chat message |
-| `PlayerInteractEvent` | Player interacts |
-| `PlayerCraftEvent` | Player crafts item |
+| Event | Status | Description |
+|-------|--------|-------------|
+| `PlayerConnectEvent` | 🟢 Verified | Player connects to server |
+| `PlayerDisconnectEvent` | 🔴 Requires Validation | Player disconnects |
+| `PlayerReadyEvent` | 🔴 Requires Validation | Player is ready |
+| `PlayerChatEvent` | 🔴 Requires Validation | Player sends chat message |
+| `PlayerInteractEvent` | 🔴 Requires Validation | Player interacts |
+| `PlayerCraftEvent` | 🔴 Requires Validation | Player crafts item |
 
 ## Registering Event Handlers
 
@@ -45,7 +45,14 @@ player.sendMessage(Message.raw("Welcome!"));
 
 ## Important Notes
 
-> **Deprecated API**: `event.getPlayer()` is marked as deprecated. It still works but may change in future versions.
+> **⚠️ Deprecated API**: `event.getPlayer()` is marked as deprecated. It still works but may change in future versions.
+
+## Validation Status Legend
+
+| Status | Meaning |
+|--------|---------|
+| 🟢 Verified | Tested in-game, confirmed working |
+| 🔴 Requires Validation | Discovered from decompilation, not yet tested |
 
 ## Related
 

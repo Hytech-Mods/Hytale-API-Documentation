@@ -6,10 +6,10 @@ How to send messages to players in Hytale.
 
 ### Message Class
 
-| Class | Description |
-|-------|-------------|
-| `Message` | Message to send to players |
-| `Message.raw()` | Create raw text message |
+| Class | Status | Description |
+|-------|--------|-------------|
+| `Message` | 🟢 Verified | Message to send to players |
+| `Message.raw()` | 🟢 Verified | Create raw text message |
 
 ## Sending Messages
 
@@ -23,19 +23,26 @@ player.sendMessage(Message.raw("Hello, player!"));
 
 ## Important Notes
 
-> **Color Codes**: Hytale does NOT use Minecraft-style color codes (`§6`, `§a`, etc.). These will display as literal characters in chat. Use plain text for now.
+> **⚠️ Color Codes**: Hytale does NOT use Minecraft-style color codes (`§6`, `§a`, etc.). These will display as literal characters in chat. Use plain text for now.
 
-> **Unicode Characters**: Some Unicode characters (like `━` box drawing or `✦` symbols) may not render correctly. Stick to basic ASCII characters.
+> **⚠️ Unicode Characters**: Some Unicode characters (like `━` box drawing or `✦` symbols) may not render correctly. Stick to basic ASCII characters.
 
 ## Working Example
 
 ```java
-// This works:
+// This works (Verified):
 player.sendMessage(Message.raw("========================================"));
 player.sendMessage(Message.raw("* Welcome to Hytech! *"));
 player.sendMessage(Message.raw("  - Mod Name v1.0.0"));
 player.sendMessage(Message.raw("========================================"));
 ```
+
+## Validation Status Legend
+
+| Status | Meaning |
+|--------|---------|
+| 🟢 Verified | Tested in-game, confirmed working |
+| 🔴 Requires Validation | Discovered from decompilation, not yet tested |
 
 ## Related
 
