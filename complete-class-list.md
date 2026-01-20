@@ -1,4 +1,9 @@
-﻿com.hypixel.hytale.assetstore.AssetConstants
+﻿# Complete Class List
+
+All 5,218 classes in HytaleServer.jar (excluding inner classes).
+
+```java
+com.hypixel.hytale.assetstore.AssetConstants
 com.hypixel.hytale.assetstore.AssetExtraInfo
 com.hypixel.hytale.assetstore.AssetHolder
 com.hypixel.hytale.assetstore.AssetKeyValidator
@@ -5216,3 +5221,4 @@ com.hypixel.hytale.storage.IndexedStorageFile
 com.hypixel.hytale.storage.IndexedStorageFile_v0
 com.hypixel.hytale.storage.package-info
 com.hypixel.hytale.unsafe.UnsafeUtil
+```
